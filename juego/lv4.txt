@@ -1,0 +1,37 @@
+<html>
+<head></head>
+<body>
+<header>
+<tittle>🎿</tittle>
+<style>
+body{
+background-image: url(img/fondo.jfif);
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+</style>
+</header>
+<hr>
+<marquee direction="right"scrollamount="80">
+<a href="index.html">
+<img src= "img/pinguino.jfif">
+</a>
+</marquee>
+<hr>
+<br>
+<hr>
+<marquee>
+<h2>
+<font color="red">pincha sobre el animal</font>
+</h2>
+</marquee>
+<br>
+<marquee>
+<h2<font color="white">>level04</h2<font>
+</marquee>
+<br>
+</body>
+<html>

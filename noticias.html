@@ -1,0 +1,153 @@
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>EDEC News</title>
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="topnav" id="myTopnav">
+            <img src="image/logo.png" class="logomenu">
+            <div class="edecnews">EDEC NEWS</div> 
+            <a href="index.html">INICIO</a>
+            <a href="noticias.html">NOTICIAS</a>
+            <a href="memes.html">MEMES</a>
+            <a href="miembros.html">MIEMBROS</a>
+
+            <a href="https://www.facebook.com/EDECUniversidad/">
+                <img class="imagenredes" src="image/facebook.png">
+            </a>
+
+            <a href="https://www.instagram.com/edec430?utm_source=qr&igsh=djl0bndjMzBsOGtn">
+                <img class="imagenredes" src="image/instagram.png">
+            </a>
+
+            <a href="juego/index.html">
+                <img class="imagenredes" src="image/juego.png">
+            </a>
+        </div>
+
+        <div class="headnoticias">
+            <div class="textohead">
+                Halloween, el día de las supersticiones
+            </div>
+            <div class="textoinfo">
+                Una creencia es que las brujas pueden quitarse las piernas y dejarlas escondidas cerca de los árboles antes de transformarse. Para evitar que regresen a su forma humana, las personas colocaban sal sobre las piernas, lo que impedía que pudieran recuperarlas.
+            </div>
+        </div>
+
+         <div class="contenedornoticias">
+
+            <div class="contenido">
+                <div class="texto-contenido">
+                    <h2>HALLOWEEN EDEC</h2>
+                        <p>
+                            De esta manera se vivió la famosa festividad de Halloween, día que muchos esperan
+                            porque es donde pueden aprovechar para vestirse de sus personajes favoritos, la universidad EDEC contó con 
+                            varios alumnos que se disfrazon, además que hubo decoracion en distintos lugares del campus.
+                        </p>
+                            <a href="https://www.instagram.com/edec430?utm_source=qr&igsh=djl0bndjMzBsOGtn" target="_blank" class="vermas">Ver Mas</a>
+                </div>
+
+                <div class="imagen-contenido carousel">
+                    <img id="carousel-img" src="image/hallo1.jfif" alt="imagen">
+
+                    <button class="flecha izquierda" onclick="prevImg()">&#10094;</button>
+                    <button class="flecha derecha" onclick="nextImg()">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="contenido">
+                <div class="texto-contenido">
+                    <h2>DÍA DE MUERTOS</h2>
+                        <p>
+                            Comenzaron los preparativos para el día de muertos que se vivirá en la facultad, donde maestros y alumnos
+                            apoyaron con la decoración que se estara apreciando en distintos sitos del campus, recordemos que el dia de muertos es
+                            de las festividades mexicanas mas importantes del país.
+
+                        </p>
+                            <a href="https://www.instagram.com/edec430?utm_source=qr&igsh=djl0bndjMzBsOGtn" target="_blank" class="vermas">Ver Mas</a>
+                </div>
+
+                <div class="imagen-contenido carousel">
+                    <img id="carouseldos-img" src="image/muertos.jfif" alt="imagen">
+
+                    <button class="flecha izquierda" onclick="prevImg2()">&#10094;</button>
+                    <button class="flecha derecha" onclick="nextImg2()">&#10095;</button>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="pie">
+             @Copyright 2026 <br>
+            Esta página forma parte del proyecto final de la materia de Ingenieria de Software
+        </div>
+
+
+
+
+
+
+<script>
+  let index = 0;
+
+  const imagenes = [
+    "image/hallo1.jfif",
+    "image/hallo2.jpg",
+    "image/hallo3.jfif"
+  ];
+
+  function showImg() {
+    document.getElementById("carousel-img").src = imagenes[index];
+  }
+
+  function nextImg() {
+    index = (index + 1) % imagenes.length;
+    showImg();
+  }
+
+  function prevImg() {
+    index = (index - 1 + imagenes.length) % imagenes.length;
+    showImg();
+  }
+
+  setInterval(nextImg, 4000); 
+</script>
+
+
+<script>
+  let index2 = 0;
+
+  const imagenes2 = [
+    "image/muertos.jfif",
+    "image/muertos2.jfif",
+  ];
+
+  function showImg2() {
+    document.getElementById("carouseldos-img").src = imagenes2[index2];
+  }
+
+  function nextImg2() {
+    index2 = (index2 + 1) % imagenes2.length;
+    showImg2();
+  }
+
+  function prevImg2() {
+    index2 = (index2 - 1 + imagenes2.length) % imagenes2.length;
+    showImg2();
+  }
+
+  setInterval(nextImg2, 4000); 
+</script>
+
+
+
+
+
+
+    </body>
+    </html>
