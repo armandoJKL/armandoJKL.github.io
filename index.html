@@ -8,6 +8,79 @@
     </head>
 
     <body>
+        <style>
+        body {
+.textohead {
+font-size: 22px;
+font-weight: bold;
+}
+
+
+.textoinfo {
+margin-top: 10px;
+font-size: 14px;
+}
+
+
+/* Contenido */
+.contenedor {
+padding: 10px;
+}
+
+
+.contenido {
+display: flex;
+flex-direction: column;
+background: #f2f2f2;
+border-radius: 10px;
+padding: 15px;
+margin-bottom: 20px;
+}
+
+
+.imagen-contenido img {
+width: 100%;
+border-radius: 10px;
+margin-top: 10px;
+}
+
+
+.vermas {
+display: inline-block;
+margin-top: 10px;
+background: #004aad;
+color: white;
+padding: 10px 15px;
+border-radius: 8px;
+text-decoration: none;
+}
+
+
+.pie {
+text-align: center;
+padding: 20px;
+background: #222;
+color: white;
+font-size: 14px;
+}
+
+
+/* --- ADAPTACIÓN PARA PANTALLAS GRANDES --- */
+@media(min-width: 768px) {
+.contenido {
+flex-direction: row;
+align-items: center;
+}
+
+
+.imagen-contenido img {
+width: 250px;
+margin-left: 20px;
+}
+}
+</style>
+</head>
+<body>
         <div class="topnav" id="myTopnav">
             <img src="image/logo.png" class="logomenu">
             <div class="edecnews">EDEC NEWS</div> 
@@ -132,3 +205,4 @@
 
     </body>
 </html>
+
